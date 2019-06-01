@@ -102,7 +102,7 @@ class MyParser:
 			if self.la == 'XOR' or self.la == 'OR' or self.la == 'IDENTIFIER' or self.la == 'PRINT' or self.la == None or self.la == ')':
 					return freak
 			else:
-					raise ParseError("COME ON GIVE AN AND")
+					raise ParseError("COME ON GIVE AN AND,OR OR XOR")
 		else:
 			raise ParseError("i AM WAITING ( or IDENTIFIER or BIT or )")
 	def atom(self):
